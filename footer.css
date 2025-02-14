@@ -1,0 +1,61 @@
+/*----------------------------------*/
+/* تنسيق عام للـ footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 0 0 13px 0;
+  }
+  .footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* تنسيق شعار الموقع */
+  .footer-logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .footer-logo img{
+    width: 127px;
+    margin-top: -23px;
+    margin-bottom: -22px;
+  }
+  /* تنسيق قائمة الأيقونات */
+  .footer-social ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-social li {
+    margin: 0 10px;
+  }
+  .footer-social a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+    text-decoration: none;
+  }
+  .footer-social a:hover {
+    color: #00aced; /* تغيير اللون عند المرور */
+  }
+  /* تنسيق نص الحقوق */
+  .footer-info {
+    font-size: 14px;
+  }
+  /* تنسيق استجابة الشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-social ul {
+      margin: 10px 0;
+    }
+}

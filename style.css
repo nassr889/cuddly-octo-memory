@@ -1,0 +1,157 @@
+/* نظام الألوان الأساسي */
+:root {
+    --primary: #1A120B;   /* اللون الرئيسي - أسود خشبي */
+    --secondary: #D4A373; /* اللون الثانوي - ذهبي ترابي */
+    --accent: #3C2A21;    /* لون التمييز - بني داكن */
+    --light: #FAEED1;     /* لون الخلفية - بيج فاتح */
+    --dark: #0D0D0D;      /* لون إضافي - أسود داكن */
+}
+
+/* إعادة ضبط الأنماط الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif; /* خط عربي أنيق */
+}
+
+/* أنماط عامة للصفحة */
+body {
+    direction: ltr;
+    background: var(--light);
+    color: var(--primary);
+    line-height: 1.6;
+}
+
+/* شريط التنقل العلوي */
+.navbar {
+    background: rgba(26, 18, 11, 0.95);
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* تصميم الشعار */
+.logo img {
+    margin-top: -50px;
+    margin-bottom: -50px;
+    width: 140px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+/* قائمة التنقل */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+/* تأثيرات الروابط عند المرور */
+.nav-links a:hover {
+    color: var(--secondary);
+    transform: translateY(-2px);
+}
+
+/* تصميم السلايدر الرئيسي */
+.swiper {
+    width: 100%;
+    height: 80vh;
+    margin-top: 70px; /* تعويض ارتفاع شريط التنقل */
+}
+
+.swiper-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+/* تنسيق صور السلايدر */
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.85);
+    transition: transform 0.5s;
+}
+
+.swiper-slide:hover img {
+    transform: scale(1.02);
+}
+
+/* نص الشرائح */
+.slide-caption {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+    
+}
+
+/* قسم الفيديو الترويجي */
+.video-section {
+    padding: 4rem 5%;
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    text-align: center;
+}
+
+.video-container {
+    border: 3px solid var(--secondary);
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+/* تنسيق الفيديو */
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* قسم المنتجات */
+/* نظام الألوان الأساسي */
+:root {
+    --primary: #1A120B;   /* اللون الرئيسي */
+    --secondary: #D4A373; /* اللون الثانوي */
+    --accent: #3C2A21;    /* لون التمييز */
+    --light: #FAEED1;     /* لون الخلفية */
+    --dark: #0D0D0D;      /* لون إضافي */
+}
+
+/* إعادة ضبط الأنماط الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif; /* خط عربي أنيق */
+}
+
+/* أنماط عامة للصفحة */
+body {
+    background: var(--light);
+    color: var(--primary);
+    line-height: 1.6;
+}
+
+/* قسم المنتجات */

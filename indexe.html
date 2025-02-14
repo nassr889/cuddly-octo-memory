@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>متجر نفحة تراث للعطور</title>
+
+    <!-- روابط ملفات التنسيق -->
+    <link rel="icon" href="imag/6051_5f51f2794d221-1599206009.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>A.M.H Perfumes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">  
+     <link rel="stylesheet" href="css/header.css">
+     <link rel="stylesheet" href="css/footer.css">
+     <!-- <link rel="stylesheet" href="./slider.css"> -->
+     <link rel="stylesheet" href="css/product_template.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- تضمين Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- شريط التنقل العلوي -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="imag/IMG_٢٠٢٥٠٢٠٢_٢٠٤٧٤٦-removebg.png" alt="شعار المتجر">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html.html">الرئيسية</a></li>
+                <li class="dropdown">
+                    <a href="#">الفئات <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="رجالي.html">رجالي</a></li>
+                        <li><a href="نسائي.html">نسائي</a></li>
+                        <li><a href="ماركات.html">ماركات</a></li>
+                        <li><a href="ماركات.html">مجموعات وهدايا</a></li>
+                        <li><a href="ماركات.html">منتجات للعنايه الشخصيه</a></li>
+                    </ul>
+                </li>
+                <li><a href="indexe.html">تسجيل الدخول</a></li>
+                <li><a href="hh.html">تواصل معنا</a></li>
+                <li>
+                    <form class="search-form">
+                        <input type="search" placeholder="...بحث عن العطر">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+            </ul>
+            <div class="cart">
+                <a href="salah.html"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+    <section>
+    <div class="Login-box">
+        <form action="">
+            <h2>Login</h2>
+            <div class="input-box">
+            <span class="icon"><ion-icon name="people"></ion-icon></span>
+            <input type="User-Name" required>
+            <label> User Name</label>
+    </div>
+    <div class="input-box">
+        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+        <input type="password" required>
+        <label> password</label>
+    </div>
+    <div class="remember-forget">
+    <label><input type="checkbox">Remember Me</label>
+    <a href="#">Forget password?</a>
+    </div>
+    <button type="submit">Login</button>
+    <div class="register-link">
+        <p>Don't have an account ?<a
+             href="#">Register </a></p>
+    </div>
+         </form>
+    </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+          <!-- شعار الموقع -->
+          <div class="footer-logo">
+            <a href="/"><img src="./imag/IMG_٢٠٢٥٠٢٠٢_٢٠٤٧٤٦-removebg.png" alt="الشعار"></a>
+          </div>
+          <!-- أيقونات التواصل الاجتماعي -->
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a href="#" target="_blank" aria-label="تويتر">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" aria-label="فيسبوك">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" aria-label="إنستجرام">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" aria-label="يوتيوب">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- معلومات الحقوق -->
+          <div class="footer-info">
+            <p>حقوق النشر &copy; 2024. جميع الحقوق محفوظة.</p>
+          </div>
+        </div>
+      </footer>
+    <!-- مكتبة Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ملف الجافاسكريبت الرئيسي -->
+    <script src="js/Interactive.js">
+
+                // تفعيل زر القائمة في الشاشات الصغيرة
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+    </script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* قسم المنتجات */
+.products {
+    padding: 2rem 5%; /* تقليل التباعد العلوي والسفلي */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* تقليل الحد الأدنى للعرض */
+    gap: 1.5rem; /* تقليل الفجوة بين البطاقات */
+}
+
+/* تصميم بطاقة المنتج */
+.product-card {
+    background: white;
+    border-radius: 10px; /* تقليل نصف القطر للزوايا */
+    overflow: hidden;
+    transition: all 0.3s;
+    position: relative;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1); /* تقليل الظل */
+    text-align: center;
+    max-width: 240px; /* تحديد الحد الأقصى للعرض */
+    margin: auto; /* توسيط البطاقات */
+    padding: 10px;
+    
+}
+
+/* تأثير رفع البطاقة عند المرور */
+.product-card:hover {
+    transform: translateY(-8px); /* تقليل الارتفاع عند التحويم */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* تعديل الظل عند التحويم */
+}
+
+.product-image {
+    height: 240px; /* تقليل ارتفاع الصورة */
+    overflow: hidden;
+    position: relative;
+}
+
+/* تنسيق صور المنتجات */
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+/* تكبير الصورة عند المرور */
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 1rem; /* تقليل الحشوة الداخلية */
+}
+
+/* تنسيق السعر */
+.price {
+    color: var(--secondary);
+    font-size: 1.4rem; /* تقليل حجم الخط */
+    margin: 0.5rem 0; /* تقليل الهوامش */
+    font-weight: bold;
+}
+
+/* تصميم زر الإضافة للسلة */
+.add-to-cart {
+    background: var(--secondary);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem; /* تقليل الحشوة الداخلية */
+    border-radius: 20px; /* تقليل نصف القطر للزوايا */
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9rem; /* تقليل حجم الخط */
+    margin-right: 0.5rem;
+}
+
+/* تصميم زر الإضافة للمفضلة */
+.add-to-favorites {
+    background: transparent;
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+    padding: 0.5rem 0.9rem; /* تقليل الحشوة الداخلية */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1rem; /* تقليل حجم الخط */
+}
+
+/* تأثيرات الأزرار عند المرور */
+.add-to-cart:hover {
+    background: var(--accent);
+    letter-spacing: 0.5px; /* تقليل تباعد الحروف */
+    transform: scale(1.05);
+}
+
+.add-to-favorites:hover {
+    background: var(--secondary);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* تنسيق حاوية الأزرار */
+.product-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem; /* تقليل الهامش العلوي */
+}
+
+/* تصميم متجاوب للجوال */
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+    .product-card {
+        max-width: 100%; /* جعل العرض 100% في الشاشات الصغيرة */
+    }
+    .product-image {
+        height: 200px; /* تقليل ارتفاع الصورة في الشاشات الصغيرة */
+    }
+
+}

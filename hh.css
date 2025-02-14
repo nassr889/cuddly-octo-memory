@@ -1,0 +1,75 @@
+:root {
+    --primary: #1A120B;   /* اللون الرئيسي - أسود خشبي */
+    --secondary: #D4A373; /* اللون الثانوي - ذهبي ترابي */
+    --accent: #3C2A21;    /* لون التمييز - بني داكن */
+    --accente: hsl(20, 29%, 18% ,0.6);
+    --light: #FAEED1;     /* لون الخلفية - بيج فاتح */
+    --dark: #0D0D0D;      /* لون إضافي - أسود داكن */
+}
+body {
+    margin: 130px 0 0 0;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    background: center fixed url('../imag/عبق\ يحاكي\ الاحساس🤎\(JPG\).jpg') !important;
+    background-size: cover;
+    padding: 0;
+    color: var(--light);
+}
+.contact {
+    background: var(--accente);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    max-width: 600px;
+    margin: 50px auto;
+}
+.container {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-info p {
+    margin: 15px 0;
+    font-size: 18px;
+    color: var(--light);
+}
+.social-icons a {
+    margin: 0 15px;
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: var(--light);
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: var(--dark);
+    color: var(--light);
+    font-size: 16px;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--secondary);
+}
+.contact-form button {
+    background: var(--secondary);
+    color: var(--dark);
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+.contact-form button:hover {
+    background: var(--light);
+    color: var(--primary);
+}
